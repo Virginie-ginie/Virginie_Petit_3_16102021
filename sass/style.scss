@@ -1,8 +1,10 @@
 
 @import "utils/variables.scss";
-@import "layout/header";
-@import "composants/search";
-@import "pages/home.scss";
+@import "utils/mixines.scss";
 @import "base/police.scss";
+@import "composants/search";
 @import "composants/button";
+@import "layout/header";
+@import "pages/home.scss";
+
 

@@ -1,7 +1,15 @@
-.logo {
-  height: 2em;
-  margin-left: 74px;
-  margin-bottom: 11px;
+.logo, h1, h2, h3, h4 {
+  font-family: "Shrikhand", cursif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.en_tete, .restaurants {
+  background: #f6f6f6;
+  padding-top: 20px;
+  height: 270px;
 }
 
 .recherche {
@@ -9,10 +17,10 @@
 }
 
 .barre_search {
-  background: gainsboro;
+  background: #eaeaea;
   border: none;
   width: 100%;
-  height: 30px;
+  height: 40px;
   text-align: center;
 }
 
@@ -24,7 +32,59 @@
 .map {
   position: absolute;
   left: 100px;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.explication {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 25px;
+  margin: 15px 20px 15px 30px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 8px 2px #c4c4c4;
+  background-color: #f5f5f5;
+  height: 17px;
+}
+
+.operation__steps--number {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-left: -40px;
+}
+
+.icone {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: grey;
+}
+
+.choix {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bouton_explorer {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.logo {
+  height: 2em;
+  margin-left: 74px;
+  margin-bottom: 11px;
 }
 
 .titre_reservez {
@@ -37,25 +97,6 @@
   width: 100%;
   text-align: center;
   color: gray;
-}
-
-.logo, .h {
-  font-family: "Shrikhand", cursif;
-}
-
-.p {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.bouton_explorer {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 10px 5px;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 4px 4px 6px #aaa;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
