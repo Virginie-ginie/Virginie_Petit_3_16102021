@@ -1,0 +1,19 @@
+.recherche{
+    display: flex;
+}
+.barre_search{
+    background:gainsboro;
+    border:none;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+::placeholder{
+    color:black;
+    font-weight: bold;
+}
+.map{
+    position: absolute;
+    left: 100px;
+    margin-top:5px;
+}
