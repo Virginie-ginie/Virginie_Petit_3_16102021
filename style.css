@@ -1,5 +1,5 @@
-h1, h2, h3, h4 {
-  font-family: "Shrikhand", cursif;
+.logo-footer, h1, h2, h3, h4 {
+  font-family: "Shrikhand";
 }
 
 p {
@@ -10,6 +10,10 @@ p {
   background: #f6f6f6;
   padding-top: 20px;
   height: 270px;
+}
+
+.restaurants {
+  height: 1400px;
 }
 
 .recherche {
@@ -78,13 +82,160 @@ p {
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  margin-left: 100px;
+  margin-left: 84px;
+  width: 199px;
+}
+
+.bouton_commander {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  margin-left: 84px;
+  width: 199px;
+  width: 140px;
+  margin-bottom: 80px;
 }
 
 .logo {
   height: 2em;
   margin-left: 74px;
   margin-bottom: 11px;
+  margin-top: 20px;
+}
+
+.fleche {
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.logo-menu {
+  width: 190px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+footer {
+  width: 100%;
+  background: #353535;
+  height: 180px;
+}
+
+.logo-footer {
+  color: white;
+  font-size: 30px;
+  margin-left: 36px;
+}
+
+.footer {
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.proposer, .devenir, .mention {
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.la_note {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.image {
+  margin: 0;
+}
+
+.titre_note {
+  font-family: "Shrikhand", cursif;
+  display: flex;
+  background: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  position: absolute;
+  top: 256px;
+}
+
+.coeur {
+  font-size: 25px;
+  margin-top: 10px;
+  position: absolute;
+  left: 290px;
+  top: 17px;
+}
+
+.francaise {
+  margin-left: 20px;
+}
+
+.menu {
+  background: #f6f6f6;
+  margin-bottom: 41px;
+}
+
+.entrees {
+  margin-top: 26px;
+}
+
+.titre {
+  margin-left: 20px;
+  border-bottom: 3px solid #99E2D0;
+  width: 62px;
+}
+
+.bouton {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 290px;
+  margin-left: 22px;
+}
+
+.partie_complemtaire {
+  display: flex;
+}
+
+.tarif {
+  position: absolute;
+  top: 36px;
+  left: 256px;
+  font-weight: bold;
+}
+
+.complement {
+  margin-top: -11px;
+  font-size: 13px;
+}
+
+.tartare, .veloute, .soupe, .coquilles, .magret, .pigeonneau, .macaron, .baba, .tarte_citron {
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
 }
 
 .titre_reservez {
@@ -99,24 +250,24 @@ p {
   color: gray;
 }
 
+.titre_fonctionnement, .titre_restaurants {
+  margin-left: 15px;
+}
+
 .carte, .carte2 {
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
   margin: 20px;
   position: relative;
   background: #fff;
-  height: 270px;
-}
-
-.carte2 {
-  height: 290px;
+  height: 300px;
 }
 
 .image_restaurants {
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  width: 304px;
+  width: 320px;
   height: 100%;
   max-height: 220px;
 }
@@ -154,9 +305,12 @@ figure {
   margin-top: 0;
 }
 
-.coeur {
+.coeur-accueil {
   font-size: 25px;
   margin-top: 10px;
+  position: absolute;
+  top: 236px;
+  left: 270px;
 }
 
 /*# sourceMappingURL=style.css.map */

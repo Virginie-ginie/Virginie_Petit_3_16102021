@@ -1,0 +1,70 @@
+.la_note{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+.image{
+    margin:0;
+}
+.titre_note{
+    font-family: "Shrikhand", cursif;
+    display: flex;
+    background: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    position:absolute;
+    top:256px;
+}
+.coeur{
+    font-size: 25px;
+    margin-top: 10px;
+    position: absolute;
+    left: 290px;
+    top: 17px;
+}
+.francaise{
+    margin-left: 20px;
+}
+.menu{
+    background: #f6f6f6;
+    margin-bottom: 41px;
+}
+.entrees{
+    margin-top:26px;
+}
+.titre{
+    margin-left: 20px;
+    border-bottom: 3px solid #99E2D0;
+    width: 62px;
+}
+.bouton{
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 290px;
+    margin-left: 22px;
+}
+.partie_complemtaire{
+    display: flex;
+}
+.tarif{
+    position:absolute;
+    top: 36px;
+    left: 256px;
+    font-weight: bold;
+}
+.complement{
+    margin-top:-11px;
+    font-size: 13px;
+}
+.tartare,.veloute,.soupe,.coquilles,.magret,.pigeonneau,.macaron,.baba,.tarte_citron{
+    margin-top: 0;
+}

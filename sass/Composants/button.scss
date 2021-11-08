@@ -1,3 +1,8 @@
-.bouton_explorer{
+.bouton_explorer,{
 @include bouton-violet;
+}
+.bouton_commander{
+    @include bouton-violet;
+    width: 140px;
+    margin-bottom: 80px;
 }
