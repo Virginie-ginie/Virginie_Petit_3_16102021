@@ -2,41 +2,39 @@
   font-family: "Shrikhand";
 }
 
-p {
+p, strong, a {
   font-family: "Roboto", sans-serif;
 }
 
 .en_tete, .restaurants {
   background: #f6f6f6;
   padding-top: 20px;
-  height: 270px;
+  height: 300px;
 }
 
 .restaurants {
-  height: 1400px;
+  height: 1320px;
 }
 
 .recherche {
   display: flex;
-}
-
-.barre_search {
+  justify-content: center;
+  align-items: center;
   background: #eaeaea;
-  border: none;
   width: 100%;
   height: 40px;
   text-align: center;
 }
 
+.barre_search {
+  border: none;
+  background: #eaeaea;
+  margin-left: 10px;
+}
+
 ::placeholder {
   color: black;
   font-weight: bold;
-}
-
-.map {
-  position: absolute;
-  left: 100px;
-  margin-top: 10px;
 }
 
 .explication {
@@ -124,13 +122,14 @@ p {
 footer {
   width: 100%;
   background: #353535;
-  height: 180px;
+  height: 200px;
 }
 
 .logo-footer {
   color: white;
   font-size: 30px;
   margin-left: 36px;
+  margin-top: 0;
 }
 
 .footer {
@@ -162,7 +161,6 @@ li {
 }
 
 .titre_note {
-  font-family: "Shrikhand", cursif;
   display: flex;
   background: #f6f6f6;
   border-top-left-radius: 25px;
@@ -241,7 +239,16 @@ body {
 .titre_reservez {
   width: 100%;
   text-align: center;
-  font-weight: bold;
+}
+
+.reservez {
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+.decouvrez {
+  font-weight: bolder;
+  margin-bottom: 25px;
 }
 
 .titre_decouvrez {
@@ -252,6 +259,11 @@ body {
 
 .titre_fonctionnement, .titre_restaurants {
   margin-left: 15px;
+  margin-top: 20px;
+}
+
+.explication:hover {
+  background: #deebff;
 }
 
 .carte, .carte2 {
@@ -260,7 +272,7 @@ body {
   margin: 20px;
   position: relative;
   background: #fff;
-  height: 300px;
+  height: 284px;
 }
 
 .image_restaurants {
@@ -295,11 +307,6 @@ figure {
   margin-top: 10px;
 }
 
-.decriptif {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nom-resto {
   margin-left: 15px;
   margin-top: 0;
@@ -309,7 +316,7 @@ figure {
   font-size: 25px;
   margin-top: 10px;
   position: absolute;
-  top: 236px;
+  top: 222px;
   left: 270px;
 }
 

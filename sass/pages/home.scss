@@ -4,7 +4,14 @@ body{
 .titre_reservez{
     width: 100%;
     text-align: center;
-    font-weight:bold;
+}
+.reservez{
+    font-weight: bolder;
+    font-size: 32px;
+}
+.decouvrez{
+    font-weight: bolder;
+    margin-bottom: 25px;
 }
 .titre_decouvrez{
     width: 100%;
@@ -13,6 +20,10 @@ body{
 }
 .titre_fonctionnement,.titre_restaurants{
     margin-left: 15px;
+   margin-top:20px
+}
+.explication:hover{
+    background:#deebff;
 }
 .carte,.carte2{
     border-radius: 25px;
@@ -20,7 +31,7 @@ body{
     margin: 20px;
     position: relative;
     background: #fff;
-    height: 300px;
+    height: 284px;
 }
 .image_restaurants{
     object-fit: cover;
@@ -50,10 +61,7 @@ figure{
     margin-left: 15px;
     margin-top:10px;
 }
-.decriptif{
-    display: flex;
-    justify-content: space-between;
-}
+
 .nom-resto{
     margin-left: 15px;
     margin-top: 0;
@@ -62,6 +70,6 @@ figure{
     font-size: 25px;
     margin-top: 10px;
     position: absolute;
-    top:236px;
+    top:222px;
     left:270px
 }
