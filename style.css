@@ -1,8 +1,27 @@
-.logo-footer, h1, h2, h3, h4 {
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.logo-footer, h1, h3 {
   font-family: "Shrikhand";
 }
 
-p, strong, a {
+p, strong, a, h2, h4, span {
   font-family: "Roboto", sans-serif;
 }
 
@@ -99,6 +118,38 @@ p, strong, a {
   margin-bottom: 80px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Shrikhand;
+  color: black;
+  text-align: center;
+}
+
+.section {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+  font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 4s forwards;
+}
+
+.couvert {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: spin 1s linear infinite;
+}
+
 .logo {
   height: 2em;
   margin-left: 74px;
@@ -122,14 +173,14 @@ p, strong, a {
 footer {
   width: 100%;
   background: #353535;
-  height: 200px;
+  height: 226px;
 }
 
 .logo-footer {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   margin-left: 36px;
-  margin-top: 0;
+  padding: 20px 0 15px 0;
 }
 
 .footer {
@@ -188,7 +239,7 @@ li {
 }
 
 .entrees {
-  margin-top: 26px;
+  margin-top: 34px;
 }
 
 .titre {
@@ -205,9 +256,6 @@ li {
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   width: 290px;
   margin-left: 22px;
 }
@@ -219,17 +267,39 @@ li {
 .tarif {
   position: absolute;
   top: 36px;
-  left: 256px;
+  left: 206px;
   font-weight: bold;
 }
 
-.complement {
-  margin-top: -11px;
-  font-size: 13px;
+.check {
+  border-bottom-right-radius: 15px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  height: 72px;
+  border-top-right-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.tartare, .veloute, .soupe, .coquilles, .magret, .pigeonneau, .macaron, .baba, .tarte_citron {
+.ok {
+  color: #ffff;
+  font-size: 25px;
+}
+
+.complement {
+  margin-top: -20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.tartare, .veloute, .soupe, .coquilles, .magret, .pigeonneau, .petale, .fondant, .millefeuille {
   margin-top: 0;
+  font-weight: bolder;
+  font-size: 19px;
 }
 
 body {

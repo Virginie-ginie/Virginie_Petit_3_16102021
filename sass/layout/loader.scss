@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Shrikhand;
+    color:black;
+    text-align: center;
+}
+.section{
+    background-image:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    font-size: x-large;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    top:0;
+    left:0;
+    pointer-events: none;
+    animation:loader 1s ease-in-out 4s forwards;
+}
+.couvert{
+    vertical-align: middle;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}

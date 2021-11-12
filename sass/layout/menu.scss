@@ -30,7 +30,7 @@
     margin-bottom: 41px;
 }
 .entrees{
-    margin-top:26px;
+    margin-top:34px;
 }
 .titre{
     margin-left: 20px;
@@ -45,9 +45,6 @@
     box-shadow: 4px 4px 6px #aaa;
     position: relative;
     cursor: pointer;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     width: 290px;
     margin-left: 22px;
 }
@@ -57,13 +54,34 @@
 .tarif{
     position:absolute;
     top: 36px;
-    left: 256px;
+    left: 206px;
     font-weight: bold;
 }
-.complement{
-    margin-top:-11px;
-    font-size: 13px;
+.check{
+    border-bottom-right-radius: 15px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    height: 72px;
+    border-top-right-radius: 15px;
+    position:absolute;
+    top:0;
+    right: 0;
+   
 }
-.tartare,.veloute,.soupe,.coquilles,.magret,.pigeonneau,.macaron,.baba,.tarte_citron{
+.ok{
+    color: #ffff;
+    font-size: 25px;
+}
+.complement{
+    margin-top:-20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.tartare,.veloute,.soupe,.coquilles,.magret,.pigeonneau,.petale,.fondant,.millefeuille{
     margin-top: 0;
+    font-weight: bolder;
+    font-size: 19px;
 }
