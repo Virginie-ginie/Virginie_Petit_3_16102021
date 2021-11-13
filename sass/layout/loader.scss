@@ -18,12 +18,20 @@ body{
     top:0;
     left:0;
     pointer-events: none;
-    animation:loader 1s ease-in-out 4s forwards;
+    animation:loader-index 1s ease-in-out 4s forwards;
 }
 .couvert{
     vertical-align: middle;
     position: absolute;
     top:50%;
     left: 50%;
+    font-size: 40px;
     animation: spin 1s linear infinite;
+}
+.loader{
+    vertical-align: middle;
+    position: absolute;
+    top:40%;
+    left: 19%;
+    font-size: 40px;
 }

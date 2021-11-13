@@ -48,6 +48,42 @@
     width: 290px;
     margin-left: 22px;
 }
+.animation-tartare{
+    animation: appariton_menu 2s ease-in-out 0s forwards;
+}
+.animation-veloute{
+    animation: appariton_menu 3s ease-in-out 0s forwards;
+}
+.animation-soupe{
+    animation: appariton_menu 4s ease-in-out 0s forwards;
+}
+.animation-coquilles{
+    animation: appariton_menu 6s ease-in-out 0s forwards;
+}
+.animation-magret{
+    animation: appariton_menu 7s ease-in-out 0s forwards;
+}
+.animation-pigeonneau{
+    animation: appariton_menu 8s ease-in-out 0s forwards;
+}
+.animation-petale{
+    animation: appariton_menu 10s ease-in-out 0s forwards;
+}
+.animation-fondant{
+    animation: appariton_menu 11s ease-in-out 0s forwards;
+}
+.animation-millefeuille{
+    animation: appariton_menu 12s ease-in-out 0s forwards;
+}
+.check{
+    &:hover{
+        & > .apparition-tarif {
+            transform: scaleX(1);
+            animation-name: apparition-tarif;
+            animation-duration: 10ms;
+        }
+    }
+}
 .partie_complemtaire{
     display: flex;
 }
@@ -68,8 +104,21 @@
     border-top-right-radius: 15px;
     position:absolute;
     top:0;
-    right: 0;
+    padding: 20px;
+    right: -50px;
+    opacity: 0;
+}
+.check{
+    &:hover{
+    position:absolute;
+    top:0;
+    right: 0px;
+    opacity: 1;
+    height: 32px;
+    width: 30px;
+    margin:0;
    
+    }
 }
 .ok{
     color: #ffff;
@@ -84,4 +133,5 @@
     margin-top: 0;
     font-weight: bolder;
     font-size: 19px;
+    display: flex;
 }

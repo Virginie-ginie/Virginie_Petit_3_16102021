@@ -2,7 +2,7 @@
     0% {transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
-@keyframes loader{
+@keyframes loader-index{
     0%{
         opacity: 1;
     }
@@ -13,3 +13,21 @@
         opacity: 0;
     }
 }
+@keyframes appariton_menu{
+    from{
+       transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes apparition-tarif{
+        0% {
+            transform: scaleX(0);
+        }
+        100% {
+            transform: scaleX(1);
+        }
+    }

@@ -6,7 +6,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes loader {
+@keyframes loader-index {
   0% {
     opacity: 1;
   }
@@ -17,7 +17,25 @@
     opacity: 0;
   }
 }
-.logo-footer, h1, h3 {
+@keyframes appariton_menu {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes apparition-tarif {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.logo-footer, .loader, h1, h3 {
   font-family: "Shrikhand";
 }
 
@@ -99,7 +117,6 @@ p, strong, a, h2, h4, span {
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  margin-left: 84px;
   width: 199px;
 }
 
@@ -112,9 +129,8 @@ p, strong, a, h2, h4, span {
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  margin-left: 84px;
   width: 199px;
-  width: 140px;
+  width: 160px;
   margin-bottom: 80px;
 }
 
@@ -139,7 +155,7 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
-  animation: loader 1s ease-in-out 4s forwards;
+  animation: loader-index 1s ease-in-out 4s forwards;
 }
 
 .couvert {
@@ -147,7 +163,16 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size: 40px;
   animation: spin 1s linear infinite;
+}
+
+.loader {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 19%;
+  font-size: 40px;
 }
 
 .logo {
@@ -166,8 +191,8 @@ body {
 
 .logo-menu {
   width: 190px;
-  margin-top: 20px;
-  margin-left: 100px;
+  margin-top: 15px;
+  margin-left: 30px;
 }
 
 footer {
@@ -260,6 +285,48 @@ li {
   margin-left: 22px;
 }
 
+.animation-tartare {
+  animation: appariton_menu 2s ease-in-out 0s forwards;
+}
+
+.animation-veloute {
+  animation: appariton_menu 3s ease-in-out 0s forwards;
+}
+
+.animation-soupe {
+  animation: appariton_menu 4s ease-in-out 0s forwards;
+}
+
+.animation-coquilles {
+  animation: appariton_menu 6s ease-in-out 0s forwards;
+}
+
+.animation-magret {
+  animation: appariton_menu 7s ease-in-out 0s forwards;
+}
+
+.animation-pigeonneau {
+  animation: appariton_menu 8s ease-in-out 0s forwards;
+}
+
+.animation-petale {
+  animation: appariton_menu 10s ease-in-out 0s forwards;
+}
+
+.animation-fondant {
+  animation: appariton_menu 11s ease-in-out 0s forwards;
+}
+
+.animation-millefeuille {
+  animation: appariton_menu 12s ease-in-out 0s forwards;
+}
+
+.check:hover > .apparition-tarif {
+  transform: scaleX(1);
+  animation-name: apparition-tarif;
+  animation-duration: 10ms;
+}
+
 .partie_complemtaire {
   display: flex;
 }
@@ -282,7 +349,19 @@ li {
   border-top-right-radius: 15px;
   position: absolute;
   top: 0;
-  right: 0;
+  padding: 20px;
+  right: -50px;
+  opacity: 0;
+}
+
+.check:hover {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  opacity: 1;
+  height: 32px;
+  width: 30px;
+  margin: 0;
 }
 
 .ok {
@@ -300,6 +379,7 @@ li {
   margin-top: 0;
   font-weight: bolder;
   font-size: 19px;
+  display: flex;
 }
 
 body {
