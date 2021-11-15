@@ -15,7 +15,7 @@
 }
 @keyframes appariton_menu{
     from{
-       transform: translateX(200px);
+        transform: translateX(200px);
         opacity: 0;
     }
     to{
@@ -24,10 +24,12 @@
     }
 }
 @keyframes apparition-tarif{
-        0% {
-            transform: scaleX(0);
-        }
-        100% {
-            transform: scaleX(1);
-        }
+    from{
+        transform: translateX(200px);
+        opacity: 0;
     }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

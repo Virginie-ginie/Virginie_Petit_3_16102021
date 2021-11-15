@@ -1,8 +1,18 @@
 .bouton_explorer,{
 @include bouton-principal;
+transition: opacity 1s;
+&:hover{
+opacity:0.5;
 }
+}
+
 .bouton_commander{
     @include bouton-principal;
+    opacity: 1;
     width: 160px;
     margin-bottom: 80px;
+    transition: opacity 1s;
+    &:hover{
+    opacity:0.5;
+    }
 }

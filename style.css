@@ -28,11 +28,13 @@
   }
 }
 @keyframes apparition-tarif {
-  0% {
-    transform: scaleX(0);
+  from {
+    transform: translateX(200px);
+    opacity: 0;
   }
-  100% {
-    transform: scaleX(1);
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 .logo-footer, .loader, h1, h3 {
@@ -118,6 +120,10 @@ p, strong, a, h2, h4, span {
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
   width: 199px;
+  transition: opacity 1s;
+}
+.bouton_explorer:hover {
+  opacity: 0.5;
 }
 
 .bouton_commander {
@@ -130,8 +136,13 @@ p, strong, a, h2, h4, span {
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
   width: 199px;
+  opacity: 1;
   width: 160px;
   margin-bottom: 80px;
+  transition: opacity 1s;
+}
+.bouton_commander:hover {
+  opacity: 0.5;
 }
 
 body {
@@ -187,6 +198,7 @@ body {
   position: absolute;
   top: 20px;
   left: 30px;
+  cursor: pointer;
 }
 
 .logo-menu {
@@ -246,12 +258,17 @@ li {
   top: 256px;
 }
 
-.coeur {
+.coeur, .coeur-menu {
   font-size: 25px;
   margin-top: 10px;
   position: absolute;
-  left: 290px;
-  top: 17px;
+  left: 0px;
+  top: 0px;
+}
+
+.coeur-menu {
+  left: 291px;
+  top: 11px;
 }
 
 .francaise {
@@ -285,46 +302,40 @@ li {
   margin-left: 22px;
 }
 
-.animation-tartare {
+.animation-entree-1 {
   animation: appariton_menu 2s ease-in-out 0s forwards;
 }
 
-.animation-veloute {
+.animation-entree-2 {
   animation: appariton_menu 3s ease-in-out 0s forwards;
 }
 
-.animation-soupe {
+.animation-entree-3 {
   animation: appariton_menu 4s ease-in-out 0s forwards;
 }
 
-.animation-coquilles {
+.animation-plat-1 {
   animation: appariton_menu 6s ease-in-out 0s forwards;
 }
 
-.animation-magret {
+.animation-plat-2 {
   animation: appariton_menu 7s ease-in-out 0s forwards;
 }
 
-.animation-pigeonneau {
+.animation-plat-3 {
   animation: appariton_menu 8s ease-in-out 0s forwards;
 }
 
-.animation-petale {
+.animation-dessert-1 {
   animation: appariton_menu 10s ease-in-out 0s forwards;
 }
 
-.animation-fondant {
+.animation-dessert-2 {
   animation: appariton_menu 11s ease-in-out 0s forwards;
 }
 
-.animation-millefeuille {
+.animation-dessert-3 {
   animation: appariton_menu 12s ease-in-out 0s forwards;
-}
-
-.check:hover > .apparition-tarif {
-  transform: scaleX(1);
-  animation-name: apparition-tarif;
-  animation-duration: 10ms;
 }
 
 .partie_complemtaire {
@@ -354,7 +365,7 @@ li {
   opacity: 0;
 }
 
-.check:hover {
+.check:active {
   position: absolute;
   top: 0;
   right: 0px;
