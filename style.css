@@ -27,14 +27,22 @@
     opacity: 1;
   }
 }
-@keyframes apparition-tarif {
-  from {
-    transform: translateX(200px);
+@keyframes apparition-check {
+  0% {
+    transform: translate(50px);
     opacity: 0;
   }
-  to {
-    transform: translateX(0);
+  100% {
+    transform: translate(0);
     opacity: 1;
+  }
+}
+@keyframes button-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .logo-footer, .loader, h1, h3 {
@@ -265,6 +273,15 @@ li {
   left: 0px;
   top: 0px;
 }
+.coeur:active, .coeur-menu:active {
+  animation: padding 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 
 .coeur-menu {
   left: 291px;
@@ -278,10 +295,11 @@ li {
 .menu {
   background: #f6f6f6;
   margin-bottom: 41px;
+  height: 900px;
 }
 
 .entrees {
-  margin-top: 34px;
+  margin-top: 31px;
 }
 
 .titre {
@@ -344,8 +362,8 @@ li {
 
 .tarif {
   position: absolute;
-  top: 36px;
-  left: 206px;
+  top: 24px;
+  left: 263px;
   font-weight: bold;
 }
 
@@ -364,8 +382,7 @@ li {
   right: -50px;
   opacity: 0;
 }
-
-.check:active {
+.check:hover {
   position: absolute;
   top: 0;
   right: 0px;
@@ -378,6 +395,7 @@ li {
 .ok {
   color: #ffff;
   font-size: 25px;
+  animation: button-check 800s;
 }
 
 .complement {
