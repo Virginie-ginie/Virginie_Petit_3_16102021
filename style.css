@@ -368,9 +368,11 @@ li {
   border-top-right-radius: 15px;
   position: absolute;
   top: 0;
-  padding: 20px;
   right: -50px;
+  padding: 20px;
   opacity: 0;
+  transition: transform 220ms ease-in-out;
+  transform: translateX(12vh);
 }
 
 .bouton:hover .check-tarif {
@@ -381,6 +383,16 @@ li {
   height: 32px;
   width: 30px;
   margin: 0;
+  transform: translateX(0);
+}
+
+.partie_complemtaire {
+  transition: width 220ms ease-in-out;
+  width: 70%;
+}
+
+.bouton:hover .partie_complemtaire {
+  width: 20%;
 }
 
 .ok {
@@ -529,6 +541,19 @@ figure {
 
   .restaurants {
     height: 1500px;
+  }
+
+  /*PAGE MENU */
+  .entree-plat {
+    display: flex;
+  }
+
+  .entrees, .plats, .dessert {
+    margin-left: 200px;
+  }
+
+  .bouton {
+    width: 400px;
   }
 }
 @media screen and (min-width: 1200px) {

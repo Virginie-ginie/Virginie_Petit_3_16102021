@@ -25,8 +25,17 @@
     .restaurants{
         height: 1500px;
     }
+    /*PAGE MENU */
+    .entree-plat{
+        display: flex;
+    }
+    .entrees,.plats,.dessert{
+        margin-left: 200px;
+    }
+    .bouton{
+        width:400px;
+    }
 }
- 
  
  @media screen and (min-width: 1200px){
       /*PAGE INDEX*/
