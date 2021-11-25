@@ -1,2 +1,88 @@
-  
+@media screen and (min-width:760px) and(max-width: 1200px){
+     /*PAGE INDEX*/
+     .loader{
+        margin-left: 100px;
+     }
+     .couvert{
+        margin-left: -40px;
+    }
+    .fonctionnement{
+        display: block;
+        justify-content: center;
+        width: 350px;
+        margin-left: 200px;
+    }
+    .carte2{
+        width: 400px;
+        height: 300px;
+        margin-bottom: 50px;
+        margin-left: 180px;
+    }
+    .image_restaurants{
+        width: 400px;
+       margin-top: -20px;
+    }
+    .restaurants{
+        height: 1500px;
+    }
+}
  
+ 
+ @media screen and (min-width: 1200px){
+      /*PAGE INDEX*/
+      .loader{
+         margin-left: 350px;
+      }
+      .couvert{
+          margin-left: -10px;
+      }
+      .logo{
+          margin-left: -30px;
+      }
+      .fonctionnement{
+          display: flex;
+          justify-content: center;
+      }
+      .restaurants{
+          height: 800px;
+      }
+      .restaurant-1-2, .restaurant-3-4{
+          display: flex;
+          justify-content: center;
+      }
+      .carte2{
+          width: 400px;
+          height: 300px;
+      }
+      .image_restaurants{
+          width: 400px;
+         margin-top: -20px;
+      }
+      .coeur{
+          margin-left: 60px;
+      }
+    .nom-resto{
+        margin-top: 10px;
+}
+    /*PAGE MENU */
+    .francaise{
+          margin-left: 100px;
+      }
+      .coeur-menu{
+          margin-left: 100px;
+      }
+      .bouton{
+          width: 400px;
+      }
+    .menu{
+          display: flex;
+          justify-content: center;
+          height: 400px;
+      }
+      .plats,.dessert{
+        margin-top:31px;
+      }
+      .tarif{
+          margin-left: 100px;
+      }
+  }
