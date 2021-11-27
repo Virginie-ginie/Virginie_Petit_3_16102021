@@ -353,8 +353,9 @@ li {
 .tarif {
   position: absolute;
   top: 24px;
-  left: 263px;
+  left: 250px;
   font-weight: bold;
+  transition: left 220ms ease-in-out;
 }
 
 .check {
@@ -368,7 +369,6 @@ li {
   border-top-right-radius: 15px;
   position: absolute;
   top: 0;
-  right: -50px;
   padding: 20px;
   opacity: 0;
   transition: transform 220ms ease-in-out;
@@ -386,13 +386,8 @@ li {
   transform: translateX(0);
 }
 
-.partie_complemtaire {
-  transition: width 220ms ease-in-out;
-  width: 70%;
-}
-
-.bouton:hover .partie_complemtaire {
-  width: 20%;
+.bouton:hover .tarif {
+  left: 20%;
 }
 
 .ok {
