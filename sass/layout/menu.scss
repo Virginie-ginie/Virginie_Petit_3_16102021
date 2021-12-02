@@ -56,12 +56,12 @@
     background-color: #fff;
     border-radius: 15px;
     margin: 10px;
-    padding: 10px;
     box-shadow: 4px 4px 6px #aaa;
-    position: relative;
     cursor: pointer;
-    width: 290px;
-    margin-left: 22px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    height: 88px;
 }
 
 .animation-entree-1{
@@ -94,68 +94,73 @@
 
 .partie_complemtaire{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .tarif{
-    position:absolute;
-    top: 24px;
-    left: 250px;
+    margin-bottom: 20px;
+    margin-left: 92px;
     font-weight: bold;
     transition: left 220ms ease-in-out;
 
 }
 .check{
     border-bottom-right-radius: 15px;
-    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    height: 72px;
     border-top-right-radius: 15px;
-    position:absolute;
-    top:0;
- 
-    padding: 20px;
+    padding: 28px;
+    width: 89px;
     opacity: 0;
-    transition: transform 220ms ease-in-out ;
-    transform: translateX(12vh)
+    transition: transform 850ms ease-in-out ;
+    transform: translateX(15px)
 }
 .bouton:hover .check-tarif{
-    position:absolute;
-    top:0;
-    right: 0px;
     opacity: 1;
     height: 32px;
     width: 30px;
     margin:0;
     transform: translateX(0);
-}
+    transform: rotate(0deg);
+    transition-duration: 0.7s;
 
-.bouton:hover .tarif{
-    left: 20%;
+        transform: rotate(360deg);
+        transition: transform 0.5s;
 }
 .ok{
     color: #ffff;
     font-size: 25px;
-    transform: rotate(360deg);
-    transition-duration: 0.7s;
-        &:hover.ok{
-        transform: rotate(0);
-        }
 }
 
 .complement{
-    margin-top:-20px;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
+    margin:0;
+    width: 60px;
+    margin-left: 10px;
 }
-.tartare,.veloute,.soupe,.coquilles,.magret,.pigeonneau,.petale,.fondant,.millefeuille{
-    margin-top: 0;
+.bloc-texte{
+    width: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.intitule{
+    margin-top: 15px;
     font-weight: bolder;
     font-size: 19px;
-    display: flex;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
+    width: 136px;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
