@@ -308,6 +308,7 @@ li {
   flex-direction: row;
   justify-content: center;
   height: 88px;
+  width: 90%;
 }
 
 .animation-entree-1 {
@@ -350,11 +351,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .tarif {
-  margin-bottom: 20px;
-  margin-left: 92px;
   font-weight: bold;
   transition: left 220ms ease-in-out;
 }
@@ -366,23 +366,27 @@ li {
   align-items: center;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
-  padding: 28px;
-  width: 89px;
+  width: 0;
   opacity: 0;
   transition: transform 850ms ease-in-out;
-  transform: translateX(15px);
 }
 
 .bouton:hover .check-tarif {
   opacity: 1;
-  height: 32px;
-  width: 30px;
+  height: 100%;
+  width: 70px;
   margin: 0;
   transform: translateX(0);
   transform: rotate(0deg);
   transition-duration: 0.7s;
+}
+.bouton:hover .check-tarif.i {
   transform: rotate(360deg);
   transition: transform 0.5s;
+}
+
+.bouton:hover .bloc-texte {
+  width: 79%;
 }
 
 .ok {
@@ -402,12 +406,13 @@ li {
 }
 
 .bloc-texte {
-  width: 254px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex: none;
 }
 
 .intitule {
@@ -417,7 +422,7 @@ li {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 136px;
+  width: 100%;
   margin-left: 10px;
   margin-bottom: 0;
 }
