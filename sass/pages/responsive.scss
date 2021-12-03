@@ -72,26 +72,31 @@
       }
     .nom-resto{
         margin-top: 10px;
+    }
+
+  /*PAGE MENU */
+ .francaise{
+    margin-left: 100px;
 }
-    /*PAGE MENU */
-    .francaise{
-          margin-left: 100px;
-      }
-      .coeur-menu{
-          margin-left: 100px;
-      }
-      .bouton{
-          width: 400px;
-      }
-    .menu{
-          display: flex;
-          justify-content: center;
-          height: 400px;
-      }
-      .plats,.dessert{
-        margin-top:31px;
-      }
-      .tarif{
-          margin-left: 100px;
-      }
-  }
+.coeur-menu{
+    margin-left: 100px;
+}
+.bouton{
+    width: 400px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.plats,.dessert{
+  margin-top:31px;
+}
+.tarif{
+    margin-left: 100px;
+}
+
+.intitule{
+    margin-left: 10px;
+}
+}

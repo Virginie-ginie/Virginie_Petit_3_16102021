@@ -401,14 +401,14 @@ li {
   overflow: hidden;
   white-space: nowrap;
   margin: 0;
-  width: 60px;
   margin-left: 10px;
 }
 
 .bloc-texte {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -422,7 +422,6 @@ li {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 100%;
   margin-left: 10px;
   margin-bottom: 0;
 }
@@ -623,7 +622,7 @@ figure {
   .menu {
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 500px;
   }
 
   .plats, .dessert {
@@ -632,6 +631,10 @@ figure {
 
   .tarif {
     margin-left: 100px;
+  }
+
+  .intitule {
+    margin-left: 10px;
   }
 }
 
