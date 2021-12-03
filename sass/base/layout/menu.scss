@@ -92,7 +92,7 @@
     animation: appariton_menu 12s ease-in-out 0s forwards;
 }
 
-.partie_complementaire{
+.partie_complemtaire{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +100,8 @@
 }
 .tarif{
     font-weight: bold;
-    
+    transition: left 220ms ease-in-out;
+
 }
 .check{
     border-bottom-right-radius: 15px;
@@ -113,7 +114,8 @@
     opacity: 0;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 850ms ease-in-out;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
     max-width: 100%;
 }
 .bouton:hover .check-tarif{
@@ -123,19 +125,18 @@
     margin:0;
     transform: translateX(0); 
 }
-.bouton:hover .bloc-texte  {
+.bouton:hover .bloc-texte{
     width:calc(100% - 21%) ;
 }
 .ok{
     color: #ffff;
     font-size: 25px;
-  
 }
-
 .bouton:hover .ok{
     transform: rotate(360deg);
-    transition-duration: .5s;
+    transition-duration:.5s;
 }
+
 .complement{
     font-size: 15px;
     font-weight: bold;
@@ -154,7 +155,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     flex: none;
-    transition  : width 850ms ease-in-out
+    transition: width 850ms linear;
 }
     
 .intitule{
@@ -166,7 +167,4 @@
     white-space: nowrap;
     margin-left: 10px;
     margin-bottom: 0;
-}
-.bouton-commande{
-    background-color: #f6f6f6;
 }
