@@ -135,9 +135,11 @@ p, strong, a, h2, h4, span {
   cursor: pointer;
   width: 199px;
   opacity: 1;
-  width: 160px;
-  margin-bottom: 80px;
+  width: 180px;
+  height: 50px;
   transition: opacity 1s;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .bouton_commander:hover {
   opacity: 0.5;
@@ -216,6 +218,7 @@ footer {
   font-size: 24px;
   margin-left: 36px;
   padding: 20px 0 15px 0;
+  margin-top: 0;
 }
 
 .footer {
@@ -284,8 +287,7 @@ li {
 
 .menu {
   background: #f6f6f6;
-  margin-bottom: 41px;
-  height: 900px;
+  height: 1040px;
 }
 
 .entrees {
@@ -351,7 +353,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
 }
 
 .tarif {
@@ -368,7 +370,11 @@ li {
   border-top-right-radius: 15px;
   width: 0;
   opacity: 0;
-  transition: transform 850ms ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  max-width: 100%;
 }
 
 .bouton:hover .check-tarif {
@@ -377,12 +383,6 @@ li {
   width: 70px;
   margin: 0;
   transform: translateX(0);
-  transform: rotate(0deg);
-  transition-duration: 0.7s;
-}
-.bouton:hover .check-tarif.i {
-  transform: rotate(360deg);
-  transition: transform 0.5s;
 }
 
 .bouton:hover .bloc-texte {
@@ -392,6 +392,11 @@ li {
 .ok {
   color: #ffff;
   font-size: 25px;
+}
+
+.bouton:hover .ok {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
 }
 
 .complement {
@@ -413,6 +418,7 @@ li {
   text-overflow: ellipsis;
   white-space: nowrap;
   flex: none;
+  transition: width 850ms linear;
 }
 
 .intitule {
@@ -616,7 +622,7 @@ figure {
   }
 
   .bouton {
-    width: 400px;
+    width: 345px;
   }
 
   .menu {

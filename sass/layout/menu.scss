@@ -41,8 +41,7 @@
 }
 .menu{
     background: #f6f6f6;
-    margin-bottom: 41px;
-    height: 900px;
+    height: 1040px;
 }
 .entrees{
     margin-top:31px;
@@ -97,7 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
 }
 .tarif{
     font-weight: bold;
@@ -113,20 +112,18 @@
     border-top-right-radius: 15px;
     width: 0;
     opacity: 0;
-    transition: transform 850ms ease-in-out ;
+    overflow: hidden;
+    cursor: pointer;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    max-width: 100%;
 }
 .bouton:hover .check-tarif{
     opacity: 1;
     height: 100%;
     width: 70px;
     margin:0;
-    transform: translateX(0);
-    transform: rotate(0deg);
-    transition-duration: 0.7s;
-    &.i{
-        transform: rotate(360deg);
-        transition: transform 0.5s;
-}
+    transform: translateX(0); 
 }
 .bouton:hover .bloc-texte{
     width:calc(100% - 21%) ;
@@ -134,6 +131,10 @@
 .ok{
     color: #ffff;
     font-size: 25px;
+}
+.bouton:hover .ok{
+    transform: rotate(360deg);
+    transition-duration:.5s;
 }
 
 .complement{
@@ -154,8 +155,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     flex: none;
-    
+    transition: width 850ms linear;
 }
+    
 .intitule{
     margin-top: 15px;
     font-weight: bolder;
@@ -163,7 +165,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-  
     margin-left: 10px;
     margin-bottom: 0;
 }
