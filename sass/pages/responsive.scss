@@ -1,11 +1,16 @@
 @media screen and (min-width:760px) and(max-width: 1200px){
      /*PAGE INDEX*/
-     .loader{
-        margin-left: 150px;
-     }
      .couvert{
-        margin-left: 100px;
+        position: absolute;
+        top:40%;
+        left: 46%;
     }
+    .loader{
+        position: absolute;
+        top:30%;
+        left: 35%;
+    }
+    
     .coeur-menu {
         left: 696px;
         top: 11px;
@@ -116,12 +121,7 @@
  
  @media screen and (min-width: 1200px){
       /*PAGE INDEX*/
-      .loader{
-         margin-left: 400px;
-      }
-      .couvert{
-          margin-left: 102px;
-      }
+     
       .logo{
           margin-left: -30px;
       }
@@ -157,10 +157,10 @@
 
   /*PAGE MENU */
  .francaise,.la-note-enchantee,.delice-des-sens,.palette{
-    margin-left: 100px;
+    margin-left: 220px;
 }
 .coeur-menu{
-    margin-left: 100px;
+    margin-left: 200px;
 }
 .bouton{
     width: 345px;

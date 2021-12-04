@@ -172,7 +172,7 @@ body {
   vertical-align: middle;
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 46%;
   font-size: 40px;
   animation: spin 1s linear infinite;
 }
@@ -181,7 +181,7 @@ body {
   vertical-align: middle;
   position: absolute;
   top: 30%;
-  left: 12%;
+  left: 20%;
   font-size: 40px;
 }
 
@@ -307,7 +307,7 @@ li {
 
 .menu {
   background: #f6f6f6;
-  height: 1040px;
+  height: 1132px;
 }
 
 .entrees {
@@ -334,43 +334,43 @@ li {
 }
 
 .animation-entree-1 {
-  animation: appariton_menu 5s ease-in-out 0s forwards;
+  animation: appariton_menu 2s ease-in-out 0s forwards;
 }
 
 .animation-entree-2 {
-  animation: appariton_menu 6s ease-in-out 0s forwards;
+  animation: appariton_menu 3s ease-in-out 0s forwards;
 }
 
 .animation-entree-3 {
-  animation: appariton_menu 7s ease-in-out 0s forwards;
+  animation: appariton_menu 4s ease-in-out 0s forwards;
 }
 
 .animation-entree-4 {
-  animation: appariton_menu 8s ease-in-out 0s forwards;
+  animation: appariton_menu 5s ease-in-out 0s forwards;
 }
 
 .animation-plat-1 {
-  animation: appariton_menu 9s ease-in-out 0s forwards;
+  animation: appariton_menu 7s ease-in-out 0s forwards;
 }
 
 .animation-plat-2 {
-  animation: appariton_menu 10s ease-in-out 0s forwards;
+  animation: appariton_menu 8s ease-in-out 0s forwards;
 }
 
 .animation-plat-3 {
-  animation: appariton_menu 11s ease-in-out 0s forwards;
+  animation: appariton_menu 9s ease-in-out 0s forwards;
 }
 
 .animation-dessert-1 {
-  animation: appariton_menu 12s ease-in-out 0s forwards;
+  animation: appariton_menu 10s ease-in-out 0s forwards;
 }
 
 .animation-dessert-2 {
-  animation: appariton_menu 13s ease-in-out 0s forwards;
+  animation: appariton_menu 11s ease-in-out 0s forwards;
 }
 
 .animation-dessert-3 {
-  animation: appariton_menu 14s ease-in-out 0s forwards;
+  animation: appariton_menu 12s ease-in-out 0s forwards;
 }
 
 .partie_complementaire {
@@ -551,12 +551,16 @@ figure {
 
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   /*PAGE INDEX*/
-  .loader {
-    margin-left: 150px;
+  .couvert {
+    position: absolute;
+    top: 40%;
+    left: 46%;
   }
 
-  .couvert {
-    margin-left: 100px;
+  .loader {
+    position: absolute;
+    top: 30%;
+    left: 35%;
   }
 
   .coeur-menu {
@@ -692,14 +696,6 @@ figure {
 }
 @media screen and (min-width: 1200px) {
   /*PAGE INDEX*/
-  .loader {
-    margin-left: 400px;
-  }
-
-  .couvert {
-    margin-left: 102px;
-  }
-
   .logo {
     margin-left: -30px;
   }
@@ -743,11 +739,11 @@ figure {
 
   /*PAGE MENU */
   .francaise, .la-note-enchantee, .delice-des-sens, .palette {
-    margin-left: 100px;
+    margin-left: 220px;
   }
 
   .coeur-menu {
-    margin-left: 100px;
+    margin-left: 200px;
   }
 
   .bouton {
