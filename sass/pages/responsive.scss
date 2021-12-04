@@ -6,11 +6,37 @@
      .couvert{
         margin-left: 100px;
     }
+    .coeur-menu {
+        left: 696px;
+        top: 11px;
+        font-size: 41px;
+    }
+    .palette {
+        font-size: 47px;
+        margin-left: 19px;
+        height: 48px;
+        margin-top: 10px;
+    }
+    .logo-menu {
+        height: 81px;
+        width: 384px;
+    }
+    .titre_note {
+        position: absolute;
+        top: 303px;
+    }
     .fonctionnement{
-        display: block;
+        display: flex;
         justify-content: center;
         width: 350px;
         margin-left: 200px;
+    }
+    .titre {
+        margin-left: -114px;
+    }
+    .titre_restaurants{
+        margin-left: -505px;
+        margin-bottom: 50px;
     }
     .carte2{
         width: 400px;
@@ -26,24 +52,75 @@
         height: 1500px;
     }
     /*PAGE MENU */
+    .la-note-enchantee {
+        font-size: 48px;
+        height: 55px;
+        margin-top:2px;
+    }
+    .francaise {
+        height: 56px;
+        margin-left: 20px;
+        font-size: 47px;
+        margin-top: 2px;
+    }
+    .delice-des-sens {
+        margin-top: 2px;
+        height: 56px;
+        font-size: 48px;
+        margin-left: 10px;
+    }
+    .menu-enchantee{
+        height: 1490px;
+    }
     .entree-plat{
         display: flex;
     }
     .entrees,.plats,.dessert{
         margin-left: 200px;
+        font-size: 26px;
     }
     .bouton{
-        width:400px;
+        width: 562px;
+        margin-left: -132px;
+        height: 113px;
+    }
+    .bouton_commander{
+    width: 221px;
+    height: 61px;
+    font-size: 25px;
+    }
+    .bouton:hover .check-tarif {
+        width: 118px;
+        height: 114px;
+    }
+    .intitule{
+        font-size: 30px;
+    }
+    .complement {
+        font-size:25px;
+    }
+    .menu {
+        height: 1490px;
+    }
+    footer {
+        height: 256px;
+    }
+    .footer {
+    font-size: 23px;
+    }
+    .logo-footer {
+        margin-bottom: -17px;
+        font-size: 46px;
     }
 }
  
  @media screen and (min-width: 1200px){
       /*PAGE INDEX*/
       .loader{
-         margin-left: 500px;
+         margin-left: 400px;
       }
       .couvert{
-          margin-left: 300px;
+          margin-left: 230px;
       }
       .logo{
           margin-left: -30px;
@@ -51,6 +128,10 @@
       .fonctionnement{
           display: flex;
           justify-content: center;
+          height: 150px;
+      }
+      .titre_restaurants{
+          margin-left: -680px;
       }
       .restaurants{
           height: 800px;
@@ -75,7 +156,7 @@
     }
 
   /*PAGE MENU */
- .francaise{
+ .francaise,.la-note-enchantee,.delice-des-sens,.palette{
     margin-left: 100px;
 }
 .coeur-menu{
@@ -98,5 +179,9 @@
 
 .intitule{
     margin-left: 10px;
+}
+.bouton:hover .check-tarif {
+    width: 73px;
+   
 }
 }

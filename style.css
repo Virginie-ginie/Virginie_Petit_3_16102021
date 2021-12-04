@@ -172,7 +172,7 @@ body {
   vertical-align: middle;
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 31%;
   font-size: 40px;
   animation: spin 1s linear infinite;
 }
@@ -236,6 +236,24 @@ li {
 
 .contact {
   margin-bottom: 30px;
+}
+
+.palette {
+  font-size: 30px;
+  margin-left: 5px;
+  height: 48px;
+}
+
+.la-note-enchantee {
+  font-size: 28px;
+  height: 51px;
+  margin-left: 12px;
+}
+
+.delice-des-sens {
+  height: 50px;
+  font-size: 29px;
+  margin-left: 10px;
 }
 
 .la_note {
@@ -313,39 +331,43 @@ li {
 }
 
 .animation-entree-1 {
-  animation: appariton_menu 2s ease-in-out 0s forwards;
+  animation: appariton_menu 5s ease-in-out 0s forwards;
 }
 
 .animation-entree-2 {
-  animation: appariton_menu 3s ease-in-out 0s forwards;
-}
-
-.animation-entree-3 {
-  animation: appariton_menu 4s ease-in-out 0s forwards;
-}
-
-.animation-plat-1 {
   animation: appariton_menu 6s ease-in-out 0s forwards;
 }
 
-.animation-plat-2 {
+.animation-entree-3 {
   animation: appariton_menu 7s ease-in-out 0s forwards;
 }
 
-.animation-plat-3 {
+.animation-entree-4 {
   animation: appariton_menu 8s ease-in-out 0s forwards;
 }
 
-.animation-dessert-1 {
+.animation-plat-1 {
+  animation: appariton_menu 9s ease-in-out 0s forwards;
+}
+
+.animation-plat-2 {
   animation: appariton_menu 10s ease-in-out 0s forwards;
 }
 
-.animation-dessert-2 {
+.animation-plat-3 {
   animation: appariton_menu 11s ease-in-out 0s forwards;
 }
 
-.animation-dessert-3 {
+.animation-dessert-1 {
   animation: appariton_menu 12s ease-in-out 0s forwards;
+}
+
+.animation-dessert-2 {
+  animation: appariton_menu 13s ease-in-out 0s forwards;
+}
+
+.animation-dessert-3 {
+  animation: appariton_menu 14s ease-in-out 0s forwards;
 }
 
 .partie_complementaire {
@@ -379,11 +401,11 @@ li {
   height: 100%;
   width: 70px;
   margin: 0;
-  transform: translateX(0);
 }
 
 .bouton:hover .bloc-texte {
   width: 79%;
+  transition: width 850ms ease-in-out;
 }
 
 .ok {
@@ -415,7 +437,6 @@ li {
   text-overflow: ellipsis;
   white-space: nowrap;
   flex: none;
-  transition: width 850ms ease-in-out;
 }
 
 .intitule {
@@ -476,6 +497,10 @@ body {
   height: 284px;
 }
 
+.titre_restaurants {
+  margin-left: -190px;
+}
+
 .image_restaurants {
   object-fit: cover;
   border-top-left-radius: 25px;
@@ -531,11 +556,43 @@ figure {
     margin-left: 100px;
   }
 
+  .coeur-menu {
+    left: 696px;
+    top: 11px;
+    font-size: 41px;
+  }
+
+  .palette {
+    font-size: 47px;
+    margin-left: 19px;
+    height: 48px;
+    margin-top: 10px;
+  }
+
+  .logo-menu {
+    height: 81px;
+    width: 384px;
+  }
+
+  .titre_note {
+    position: absolute;
+    top: 303px;
+  }
+
   .fonctionnement {
-    display: block;
+    display: flex;
     justify-content: center;
     width: 350px;
     margin-left: 200px;
+  }
+
+  .titre {
+    margin-left: -114px;
+  }
+
+  .titre_restaurants {
+    margin-left: -505px;
+    margin-bottom: 50px;
   }
 
   .carte2 {
@@ -555,26 +612,89 @@ figure {
   }
 
   /*PAGE MENU */
+  .la-note-enchantee {
+    font-size: 48px;
+    height: 55px;
+    margin-top: 2px;
+  }
+
+  .francaise {
+    height: 56px;
+    margin-left: 20px;
+    font-size: 47px;
+    margin-top: 2px;
+  }
+
+  .delice-des-sens {
+    margin-top: 2px;
+    height: 56px;
+    font-size: 48px;
+    margin-left: 10px;
+  }
+
+  .menu-enchantee {
+    height: 1490px;
+  }
+
   .entree-plat {
     display: flex;
   }
 
   .entrees, .plats, .dessert {
     margin-left: 200px;
+    font-size: 26px;
   }
 
   .bouton {
-    width: 400px;
+    width: 562px;
+    margin-left: -132px;
+    height: 113px;
+  }
+
+  .bouton_commander {
+    width: 221px;
+    height: 61px;
+    font-size: 25px;
+  }
+
+  .bouton:hover .check-tarif {
+    width: 118px;
+    height: 114px;
+  }
+
+  .intitule {
+    font-size: 30px;
+  }
+
+  .complement {
+    font-size: 25px;
+  }
+
+  .menu {
+    height: 1490px;
+  }
+
+  footer {
+    height: 256px;
+  }
+
+  .footer {
+    font-size: 23px;
+  }
+
+  .logo-footer {
+    margin-bottom: -17px;
+    font-size: 46px;
   }
 }
 @media screen and (min-width: 1200px) {
   /*PAGE INDEX*/
   .loader {
-    margin-left: 500px;
+    margin-left: 400px;
   }
 
   .couvert {
-    margin-left: 300px;
+    margin-left: 230px;
   }
 
   .logo {
@@ -584,6 +704,11 @@ figure {
   .fonctionnement {
     display: flex;
     justify-content: center;
+    height: 150px;
+  }
+
+  .titre_restaurants {
+    margin-left: -680px;
   }
 
   .restaurants {
@@ -614,7 +739,7 @@ figure {
   }
 
   /*PAGE MENU */
-  .francaise {
+  .francaise, .la-note-enchantee, .delice-des-sens, .palette {
     margin-left: 100px;
   }
 
@@ -642,6 +767,10 @@ figure {
 
   .intitule {
     margin-left: 10px;
+  }
+
+  .bouton:hover .check-tarif {
+    width: 73px;
   }
 }
 

@@ -1,3 +1,19 @@
+
+.palette{
+    font-size: 30px;
+    margin-left: 5px;
+    height: 48px;
+}
+.la-note-enchantee{
+    font-size: 28px;
+    height: 51px;
+    margin-left: 12px;
+}
+.delice-des-sens{
+    height: 50px;
+    font-size: 29px;
+    margin-left: 10px;
+}
 .la_note{
     object-fit: cover;
     width: 100%;
@@ -15,7 +31,7 @@
     position:absolute;
     top:256px;
 }
-.coeur,.coeur-menu {
+.coeur,.coeur-menu{
     font-size: 25px;
     margin-top: 10px;
     position: absolute;
@@ -65,31 +81,34 @@
 }
 
 .animation-entree-1{
-    animation: appariton_menu 2s ease-in-out 0s forwards;
+    animation: appariton_menu 5s ease-in-out 0s forwards;
 }
 .animation-entree-2{
-    animation: appariton_menu 3s ease-in-out 0s forwards;
-}
-.animation-entree-3{
-    animation: appariton_menu 4s ease-in-out 0s forwards;
-}
-.animation-plat-1{
     animation: appariton_menu 6s ease-in-out 0s forwards;
 }
-.animation-plat-2{
+.animation-entree-3{
     animation: appariton_menu 7s ease-in-out 0s forwards;
 }
-.animation-plat-3{
+.animation-entree-4{
     animation: appariton_menu 8s ease-in-out 0s forwards;
 }
-.animation-dessert-1{
+.animation-plat-1{
+    animation: appariton_menu 9s ease-in-out 0s forwards;
+}
+.animation-plat-2{
     animation: appariton_menu 10s ease-in-out 0s forwards;
 }
-.animation-dessert-2{
+.animation-plat-3{
     animation: appariton_menu 11s ease-in-out 0s forwards;
 }
-.animation-dessert-3{
+.animation-dessert-1{
     animation: appariton_menu 12s ease-in-out 0s forwards;
+}
+.animation-dessert-2{
+    animation: appariton_menu 13s ease-in-out 0s forwards;
+}
+.animation-dessert-3{
+    animation: appariton_menu 14s ease-in-out 0s forwards;
 }
 
 .partie_complementaire{
@@ -121,10 +140,11 @@
     height: 100%;
     width: 70px;
     margin:0;
-    transform: translateX(0); 
+   
 }
 .bouton:hover .bloc-texte  {
     width:calc(100% - 21%) ;
+    transition  : width 850ms ease-in-out
 }
 .ok{
     color: #ffff;
@@ -154,7 +174,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     flex: none;
-    transition  : width 850ms ease-in-out
 }
     
 .intitule{
