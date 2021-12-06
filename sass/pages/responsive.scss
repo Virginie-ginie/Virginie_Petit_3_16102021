@@ -4,13 +4,36 @@
         position: absolute;
         top:40%;
         left: 46%;
+        font-size: 70px;
     }
     .loader{
         position: absolute;
         top:30%;
-        left: 35%;
+        left: 20%;
+        font-size: 80px;
     }
-    
+    .logo{
+        font-size: 24px;
+        margin-left: 16px;
+    }
+    .map{
+        font-size: 29px;
+        margin-left: 103px;
+    }
+    .barre_search{
+        margin-left: 14px;
+        font-size: 25px;
+    }
+    .recherche{
+        height: 61px;
+    }
+    .coeur-index{
+        font-size: 45px;
+        margin-top: 10px;
+        position: absolute;
+        left: 302px;
+        top: -19px;
+    }
     .coeur-menu {
         left: 696px;
         top: 11px;
@@ -22,19 +45,40 @@
         height: 48px;
         margin-top: 10px;
     }
-    .logo-menu {
-        height: 81px;
-        width: 384px;
+    .decouvrez{
+        font-size: 24px;
+    }
+    .bouton_explorer{
+        margin-top:29px;
+        font-size: 23px;
+        width: 331px;
+        height: 50px;
+    }
+    .titre_fonctionnement, .titre_restaurants {
+        font-size: 24px;
     }
     .titre_note {
         position: absolute;
         top: 303px;
     }
     .fonctionnement{
-        display: flex;
-        justify-content: center;
-        width: 350px;
-        margin-left: 200px;
+        width: 315px;
+        margin-left: 158px;
+        height: 324px;
+        margin-top: 27px;
+    }
+    .explication{
+        width: 352px;
+        height: 30px;
+    }
+    .operation__steps--number{
+        font-size: 24px;
+    }
+    .icone{
+        font-size: 40px;
+    }
+    .choix {
+        font-size: 23px;
     }
     .titre {
         margin-left: -114px;
@@ -44,17 +88,35 @@
         margin-bottom: 50px;
     }
     .carte2{
-        width: 400px;
+        width: 658px;
         height: 300px;
         margin-bottom: 50px;
-        margin-left: 180px;
+        margin-left: 52px;
     }
     .image_restaurants{
-        width: 400px;
+        width: 658px;
        margin-top: -20px;
     }
     .restaurants{
         height: 1500px;
+    }
+    .nom_restaurent, .nom_restaurent_francaise {
+        margin-left: -310px;
+        font-size: 35px;
+        margin-bottom: 16px;
+    }
+    .nom_restaurent_francaise{
+        margin-left: -388px;
+    }
+    .nom-resto, .nom-resto-charonne, .nom-resto-cite {
+        margin-left: -403px;
+        font-size: 28px;
+    }
+    .nom-resto-charonne, .nom-resto-cite{
+        margin-left:-448px ;
+    }
+    .nouveau{
+        font-size: 27px;
     }
     /*PAGE MENU */
     .la-note-enchantee {
@@ -107,6 +169,9 @@
     .menu {
         height: 1490px;
     }
+    .ok{
+        font-size: 42px;
+    }
     footer {
         height: 256px;
     }
@@ -125,6 +190,16 @@
       .logo{
           margin-left: -30px;
       }
+      .couvert{
+        position: absolute;
+        top:40%;
+        left: 46%;
+    }
+    .loader{
+        position: absolute;
+        top:30%;
+        left: 40%;
+    }
       .fonctionnement{
           display: flex;
           justify-content: center;
@@ -148,10 +223,13 @@
           width: 400px;
          margin-top: -20px;
       }
-      .coeur{
+      .coeur-index{
           margin-left: 60px;
       }
-    .nom-resto{
+      .coeur{
+          margin-left: 50px;
+      }
+    .nom-resto,.nom-resto-charonne,.nom-resto-cite{
         margin-top: 10px;
     }
 

@@ -56,18 +56,24 @@ body{
 figure{
     margin-left: 0;
 }
-.nom_restaurent{
+.nom_restaurent,.nom_restaurent_francaise{
     text-decoration: none;
     color:black;
     font-weight: bold;
     font-size: 19px;
-    margin-left: 15px;
-    margin-top:10px;
+    margin-left: -100px;
+    margin-top:0px;
+}
+.nom_restaurent_francaise{
+margin-left: -139px;
 }
 
-.nom-resto{
-    margin-left: 15px;
-    margin-top: 0;
+.nom-resto,.nom-resto-charonne,.nom-resto-cite{
+    margin-left: -149px;
+    margin-top: -13px;
+}
+.nom-resto-charonne,.nom-resto-cite{
+    margin-left:-183px ;
 }
 .coeur-accueil{
     font-size: 25px;
